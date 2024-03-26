@@ -134,6 +134,8 @@ require("inclusions/head.php");
 
 			<div class="card mb-4">
 				<h5 class="card-header">Laisser un message dans le Livre d'or</h5>
+
+				<!-- Formulaire qui redirige sur le script PHP : ajout-message-livre-or.php -->
 				<form class="card-body" action="ajout-message-livre-or.php" method="post">
 					<div class="mb-3 row">
 						<label class="col-md-2 col-form-label required">Pseudo</label>
@@ -158,6 +160,11 @@ require("inclusions/head.php");
 			<div class="card">
 				<h5 class="card-header">Les 10 derniers messages du Livre d'or</h5>
 				<div class="card-body text-center">
+
+					<!-- TODO Récupérer et afficher les 10 derniers messages du Livre d'or
+							(sachant que pour avoir un affichage correcte des messages,
+								il faut générer un <figure> ... </figure> par message
+								comme sur le site du résultat attendu) -->
 					<figure>
 						<blockquote class="blockquote">
 							???Message du livre d'or???
