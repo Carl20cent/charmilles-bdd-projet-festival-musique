@@ -1,6 +1,6 @@
 <?php
 // Informations de connexion à la BDD
-// (avec votre utilisateur qui a uniquement des droits de LECTURE)
+// (avec votre utilisateur qui a des droits de LECTURE & ÉCRITURE)
 // TODO Compléter avec les informations de connexion de votre propre BDD
 $url_hote_postgres = "...";
 $nom_base = "...";
@@ -29,7 +29,7 @@ $pdoOptions = [
 // Connexion à la BDD en utilisant les "PHP Data Objects" (PDO)
 try {
 	// Définition et stockage de l'objet de connexion
-	$GLOBALS["bdd-lecture-PDO"] = new PDO(
+	$GLOBALS["bdd-lecture-ecriture-PDO"] = new PDO(
 		'pgsql:host=' . $url_hote_postgres . ';dbname=' . $nom_base,
 		$nom_utilisateur_base,
 		$mdp_utilisateur_base,
