@@ -156,7 +156,7 @@ require("inclusions/head.php");
 			</div>
 
 			<div class="card">
-				<h5 class="card-header">Les 5 derniers messages du Livre d'or</h5>
+				<h5 class="card-header">Les 10 derniers messages du Livre d'or</h5>
 				<div class="card-body text-center">
 					<figure>
 						<blockquote class="blockquote">
